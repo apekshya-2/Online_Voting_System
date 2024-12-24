@@ -1,3 +1,3 @@
 <?php
-$conn=new mysqli("localhost","root","","final_OVS");
-if(!$conn) die ("Database connection is failed");
+$connect=new mysqli("localhost","root","","final_OVS");
+if(!$connect) die ("Database connection is failed");

@@ -108,10 +108,10 @@ if ($age < 18) {
             </script>';
 }
 
-$sql = "SELECT * FROM voter WHERE uname='$uname'";
+$sql = "SELECT * FROM voter WHERE username='$username'";
 $result = mysqli_query($connect, $sql);
 
-$sql3 = "SELECT * FROM candidate WHERE uname='$uname'";
+$sql3 = "SELECT * FROM candidate WHERE username='$username'";
 $result3 = mysqli_query($connect, $sql3);
 
 
@@ -164,7 +164,7 @@ if (mysqli_num_rows($result4) > 0) {
     if (isset($_POST['register']) && $_POST['roles'] == 'candidate') {
 
         $insert1 = mysqli_query($connect, "INSERT into candidate (firstname, lastname, email, age, username, password, state, district, city, gender, mstatus,status , votes, roles, partyname) values('$firstname', '$lastname', '$email', '$age', '$username', '$password', '$state', '$district', '$city', '$gender', '$mstatus', 0, 0,'$roles', '$partyname') ");
-        $sql2 = "SELECT * FROM candidate WHERE uname='$uname'";
+        $sql2 = "SELECT * FROM candidate WHERE username='$username'";
         $result2 = mysqli_query($connect, $sql2);
         $row = mysqli_fetch_array($result2);
         $id = $row['id'];

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a id="admin" href="routes/admin.php">Admin Login </a>
+<a id="admin" href="../routes/admin.php">Admin Login </a>
     <div id="leftsection">
         OVS <br>
         Online Voting System

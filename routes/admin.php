@@ -4,7 +4,7 @@
 
 <head>
     <title> Admin Login page</title>
-    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>

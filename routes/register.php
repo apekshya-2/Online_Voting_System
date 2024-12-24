@@ -10,7 +10,7 @@ if (isset($_SESSION['msg'])) {
 
 <div class="form-box">
     <h1>Registration</h1>
-    <form action="./insert.php" method="POST" enctype="multipart/form-data">
+    <form action="../api/register.php" method="POST" enctype="multipart/form-data"  onsubmit="return validateForm()">
         <div class="field-group">
             <label for="firstname">Firstname</label>
             <input type="text" id="firstname" name="firstname" required>
