@@ -97,7 +97,7 @@ if (mysqli_num_rows($result4) > 0) {
         $id = $row['id'];
 
 
-        $insert2 = mysqli_query($connect, "INSERT into result (id,name, email, age, username, password, state, district, city, gender, mstatus,status , votes, roles, partyname) values('$id', '$fname', '$lname', '$email', '$age', '$username', '$password', '$state', '$district', '$city', '$gender', '$mstatus', 0, 0,'$roles', '$partyname') ");
+        $insert2 = mysqli_query($connect, "INSERT into result (id,name, email, age, username, password, state, district, city, gender, mstatus,status , votes, roles, partyname) values('$id', '$name', '$email', '$age', '$username', '$password', '$state', '$district', '$city', '$gender', '$mstatus', 0, 0,'$roles', '$partyname') ");
 
 
         if ($insert1) {
