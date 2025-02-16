@@ -59,8 +59,7 @@ $groupsdata = $_SESSION['groupsdata'];
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
                             $id = $row['id'];
-                            $firstname = $row['firstname'];
-                            $lastname = $row['lastname'];
+                            $name = $row['name'];
                             $username = $row['username'];
                             $roles = $row['roles'];
                             $partyname = $row['partyname'];
@@ -73,8 +72,7 @@ $groupsdata = $_SESSION['groupsdata'];
                             echo '<tr>
                         <td class="people">
                             <div class="people-de">
-                                <h5>' . $firstname . '</h5>
-                                <h5>' . $lastname . '</h5>
+                                <h5>' . $name . '</h5>
                                 <p>' . $username . '</p>
                             </div>
                         </td>

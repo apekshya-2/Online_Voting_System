@@ -27,7 +27,7 @@ name.addEventListener("blur",()=> {
    if (str === "" || str == null) {
        console.log('Empty');
     let obj = document.getElementById("span");
-    obj.innerText = "name is required.";
+    obj.innerText = " name is required.";
    
     name1.classList.remove('success');
     name1.classList.add('error');
@@ -50,7 +50,6 @@ name.addEventListener("blur",()=> {
     }
 
 });
-
 
 
 email.addEventListener("blur",()=> {

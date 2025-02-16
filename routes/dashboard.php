@@ -48,7 +48,7 @@ if ($_SESSION['status'] == 1) {
                 <?php
                 } ?>
 
-                <b>Name : </b><?php echo $userdata['firstname'] ?> <?php echo $userdata['lastname'] ?><br>
+                <b>Name : </b><?php echo $userdata['name'] ?> <?php echo $userdata['name'] ?><br>
                 <b>Age : </b><?php echo $userdata['age'] ?> <br><b>Gender : </b><?php echo $userdata['gender'] ?> <br>
                 <b>Address : </b><?php echo $userdata['district'] ?><br>
                 <b>Status : </b><?php echo $status ?>
@@ -67,7 +67,7 @@ if ($_SESSION['status'] == 1) {
             ?>
                     <div>
                         <center>
-                            <b>Candidate Name : </b><?php echo $groupsdata[$i]['firstname'] ?> <?php echo $groupsdata[$i]['lastname'] ?><br>
+                            <b>Candidate Name : </b><?php echo $groupsdata[$i]['name'] ?> <?php echo $groupsdata[$i]['name'] ?><br>
                             <b>Party Name : </b> <?php echo $groupsdata[$i]['partyname'] ?><br>
 
 

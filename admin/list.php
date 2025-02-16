@@ -17,8 +17,7 @@ include "./header-admin.php";?>
         <thead>
             <tr>
                 <th>id</th>
-                <th>firstname</th>
-                <th>lastname</th>
+                <th>name</th>
                 <th>email</th>
                 <th>age</th>
                 <th>Username</th>
@@ -39,8 +38,7 @@ include "./header-admin.php";?>
         $i++;?>
     <tr>
             <td><?php echo $i;?></td>
-            <td><?php echo $row['firstname'];?></td>
-            <td><?php echo $row['lastname'];?></td>
+            <td><?php echo $row['name'];?></td>
             <td><?php echo $row['email'];?></td>
             <td><?php echo $row['age'];?></td>
             <td><?php echo $row['state'];?></td>

@@ -1,4 +1,4 @@
 <?php
 session_start();
 session_destroy();
-header("location:./index.php");//redirect to login page
+header("location:../");//redirect to login page

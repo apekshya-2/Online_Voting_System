@@ -62,8 +62,8 @@ $groupsdata = $_SESSION['groupsdata'];
                     $result2 = mysqli_query($connect, $sql2);
                     if ($result) {
                         while ($row = mysqli_fetch_assoc($result)) {
-                            $firstname = $row['firstname'];
-                            $lastname = $row['lastname'];
+                            $name = $row['name'];
+                            
                             $username = $row['username'];
                             $roles = $row['roles'];
                             if ($row['status'] == 0) {
@@ -75,8 +75,8 @@ $groupsdata = $_SESSION['groupsdata'];
                             echo '<tr>
                         <td class="people">
                             <div class="people-de">
-                                <h5>' . $firstname . '</h5>
-                                <h5>' . $lastname . '</h5>
+                                <h5>' . $name . '</h5>
+                                
                                 <p>' . $username . '</p>
                             </div>
                         </td>
@@ -94,8 +94,8 @@ $groupsdata = $_SESSION['groupsdata'];
 
                     if ($result2) {
                         while ($row = mysqli_fetch_assoc($result2)) {
-                            $firstname = $row['firstname'];
-                            $lastname = $row['lastname'];
+                            $name = $row['name'];
+                            
                             $username = $row['username'];
                             $roles = $row['roles'];
                             if ($row['status'] == 0) {
@@ -107,8 +107,8 @@ $groupsdata = $_SESSION['groupsdata'];
                             echo '<tr>
                         <td class="people">
                             <div class="people-de">
-                                <h5>' . $firstname . '</h5>
-                                <h5>' . $lastname . '</h5>
+                                <h5>' . $name . '</h5>
+                                
                                 <p>' . $username . '</p>
                             </div>
                         </td>

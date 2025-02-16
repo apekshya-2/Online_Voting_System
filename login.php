@@ -1,52 +1,28 @@
-<?php include "./header.php"; ?>
-<div class="form-box">
-    <h1>Login User</h1>
+<!DOCTYPE html>
+<html>
 
-    <form action="./api/login_controller.php" method="POST" name="user_form">
-        <div class="field-group">
-            <label for="uname">Username/Email</label>
-            <input type="text" id="uname" name="username" value="">
-            <span class="error-message"></span>
-        </div>
-        <div class="field-group">
-            <label for="pwd">Password</label>
-            <input type="password" id="pwd" name="password" value="">
-            <span class="error-message"></span>
-        </div>
-        <button type="submit" name="submit" class="btn">Login</button>
-        <br><br>
-        New user? <a href="routes/register.php">Register here.</a>
-    </form>
-</div>
+<head>
+    <title>Login page</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const uname = document.getElementById("uname");
-        const pwd = document.getElementById("pwd");
-        const btn = document.querySelector(".btn");
+<body>
+    <a id="admin" href="routes/admin.php">Admin Login </a>
+    <div id="leftsection">
+        OVS <br>
+        Online Voting System
+    </div>
+    <div id="rightsection">
+        <form action="api/login.php" method="POST">
+            <input type="text" name="userid" id="userid" placeholder="Username"> <br><br>
+            <input type="password" name="password" placeholder="Password" id="passwd">
+            <br><br>
+            <button id="loginbtn" type="submit" name="Login">Login</button>
+            <br> <br>
+            New user?<a href="routes/register.php">Register here.</a>
+        </form>
+    </div>
 
-        btn.addEventListener("click", function (e) {
-            let isValid = true;
+</body>
 
-            if (uname.value.trim() === '') {
-                e.preventDefault();
-                uname.nextElementSibling.textContent = "Username is empty.";
-                isValid = false;
-            } else {
-                uname.nextElementSibling.textContent = "";
-            }
-
-            if (pwd.value.trim() === '') {
-                e.preventDefault();
-                pwd.nextElementSibling.textContent = "Password is empty.";
-                isValid = false;
-            } else {
-                pwd.nextElementSibling.textContent = "";
-            }
-
-            return isValid;
-        });
-    });
-</script>
-
-<?php include "./footer.php"; ?>
+</html>

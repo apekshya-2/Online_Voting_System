@@ -51,8 +51,8 @@ $votersdata=$_SESSION['votersdata'];
                     if($result){
                         while($row=mysqli_fetch_assoc($result)){
                     $id=$row['id'];
-                    $firstname=$row['firstname'];
-                    $lastname=$row['lastname'];
+                    $name=$row['name'];
+                
                     $username=$row['username'];
                     $roles=$row['roles'];
                     if ($row['status'] ==0){
@@ -65,8 +65,8 @@ $votersdata=$_SESSION['votersdata'];
                    echo'<tr>
                         <td class="people">
                             <div class="people-de">
-                                <h5>'.$firstname.'</h5>
-                                <h5>'.$lastname.'</h5>
+                                <h5>'.$name.'</h5>
+                                
                                 <p>'.$username.'</p>
                             </div>
                         </td>

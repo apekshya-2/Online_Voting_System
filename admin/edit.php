@@ -9,12 +9,8 @@ echo isset($_SESSION['msg'])? $_SESSION['msg']:'';
         <h1>Online Voting System</h1>
     <form action="./insert.php" method="POST" name="user_form" entype="multipart/from-data" >
     <div class="field-group">
-        <label for="fname">Firstname</label>
-        <input type="text" id="fname" name="fullname" value="">
-</div>
-<div class="field-group">
-        <label for="lname">Lastname</label>
-        <input type="text" id="lname" name="lullname" value="">
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" value="">
 </div>
 <div class="field-group">
         <label for="email">Email</label>

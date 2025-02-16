@@ -42,7 +42,7 @@
                         for($i=0; $i<count($groupsdata); $i++){
                             ?>
                                 <div>
-                                <b>Candidate Name : </b><?php echo $groupsdata[$i]['fname'] ?><br>
+                                <b>Candidate Name : </b><?php echo $groupsdata[$i]['name'] ?><br>
                                 <b>Party Name : </b><?php echo $groupsdata[$i]['partyname'] ?> <br><br>
                                 <b>Votes: </b><?php echo $groupsdata[$i]['votes']?> <br>
 

@@ -10,11 +10,11 @@ $row = mysqli_fetch_array($result);
 
 if (isset($_POST['submit'])) {
 
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
+    $name = $_POST['name'];
+    
     $username = $_POST['username'];
 
-    $query = "UPDATE voter set firstname='$firstname', lastname='$lastname', username='$username' WHERE id='$id'";
+    $query = "UPDATE voter set name='$name', username='$username' WHERE id='$id'";
     $query_run = mysqli_query($connect, $query);
 
     if ($query_run) {
@@ -45,12 +45,9 @@ if (isset($_POST['submit'])) {
             <h1>Update Voters Info</h1>
 
             <div class="form-design">
-                First Name: <input type="text" name="firstname" value="<?php echo $row['firstname']; ?>">
+                Name: <input type="text" name="name" value="<?php echo $row['name']; ?>">
             </div><br>
 
-            <div class="form-design">
-                Last Name: <input type="text" name="lastname" value="<?php echo $row['lastname']; ?>">
-            </div><br>
 
             <div class="form-design">
                 User Name: <input type="text" name="username" value="<?php echo $row['username']; ?>">

@@ -10,14 +10,13 @@ $row = mysqli_fetch_array($result);
 
 if (isset($_POST['submit'])) {
 
-    $firstname = $_POST['firstname'];
-    $lastname = $_POST['lastname'];
+    $name = $_POST['name'];
     $username = $_POST['username'];
 
-    $query = "UPDATE candidate set firstname='$firstname', lastname='$lastname', username='$username' WHERE id='$id'";
+    $query = "UPDATE candidate set name='$name', username='$username' WHERE id='$id'";
     $query_run = mysqli_query($connect, $query);
 
-    $query1 = "UPDATE result set fname='$firstname', lastname='$lastname', username='$username' WHERE id='$id'";
+    $query1 = "UPDATE result set name='$name', username='$username' WHERE id='$id'";
     $query_run1 = mysqli_query($connect, $query1);
 
     if ($query_run) {
@@ -52,11 +51,7 @@ if (isset($_POST['submit'])) {
             <h1>Update Candidates Info</h1>
 
             <div class="form-design">
-                First Name: <input type="text" name="firstname" value="<?php echo $row['firstname']; ?>">
-            </div><br>
-
-            <div class="form-design">
-                Last Name: <input type="text" name="lastname" value="<?php echo $row['lastname']; ?>">
+                Name: <input type="text" name="name" value="<?php echo $row['name']; ?>">
             </div><br>
 
             <div class="form-design">

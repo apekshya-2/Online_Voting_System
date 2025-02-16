@@ -20,16 +20,12 @@ if(isset($_POST['submit'])){
                 $_SESSION['login_user_fname']=$row['fname'];
                 $_SESSION['msg']="Welcome to the dashboard";
                 header("location:../list.php");//redirect to dashboard page
-                exit();
+                
             }else {
                 $_SESSION['msg'] = "Password not matched!";
                 header("Location: ../index.php");  // Redirect back to login
-                exit();
-            } else{
-                $_SESSION['msg']="password not matched!";
-                header("location:../index.php");//redirect to login page
-                exit();
-            }
+                
+            } 
         }
     endif;
 }
