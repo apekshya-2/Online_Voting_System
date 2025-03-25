@@ -1,0 +1,881 @@
+@import url('https:fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+/*{
+  font-family: 'Poppins',
+  sans-serif;
+}*/
+body {
+  background-color: rgb(0, 68, 255);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+
+}
+
+#onlinevs {
+  color: white;
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+#admin {
+  font-family: 'Poppins', sans-serif;
+  text-align: right;
+  color: #e9dcdc;
+  margin-right: 203px;
+  border-style: inset;
+  border-color: #333438;
+  /* width: 90px; */
+  margin-left: 880px;
+  margin-top: 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#profileSection {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  width: 30%;
+  float: left;
+  display: inline-block;
+  margin: 52px 0 3px 165px;
+  padding: 0 0 20px 0;
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+
+}
+
+#groupSection {
+  font-family: 'Poppins',
+    sans-serif;
+  color: black;
+  width: 40%;
+  float: right;
+  display: inline-block;
+  margin: 35px 160px 3px 3px;
+  padding: 0 0 12px 0;
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+
+}
+
+#logout-button {
+  margin-left: 1000px;
+}
+
+#adminpage {
+  border: 2px solid black;
+  width: 180px;
+  background: white;
+  padding: 33px;
+  margin-top: 18px;
+  height: 121px;
+  padding-bottom: 47px;
+}
+
+#leftsection {
+  color: white;
+  font-weight: 600;
+  width: 50%;
+  float: left;
+  padding: 6px;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 50px;
+  margin-left: 103px;
+}
+
+#adminlogin {
+  color: aliceblue;
+  font-size: larger;
+  margin-top: 140px;
+}
+
+#rightsection {
+
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding-top: 52px;
+  height: 233px;
+  text-align: center;
+  width: 20%;
+  float: right;
+  margin-top: 140px;
+  margin-right: 16%;
+  font-size: 18px;
+}
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#loginbtn {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 17px;
+  width: 35%;
+  height: 25%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #11275e;
+  cursor: pointer;
+  outline: none;
+}
+
+#loginbtn1 {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 17px;
+  width: 35%;
+  height: 25%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #11275e;
+  cursor: pointer;
+  outline: none;
+}
+
+#register {
+  width: 30%;
+  font-size: 17px;
+  height: 7%;
+  border: thin solid #e9dcdc;
+  outline: thin;
+  padding: 6px;
+  font-weight: bold;
+  border-radius: 7px;
+  color: whitesmoke;
+  background-color: #11275e;
+  cursor: pointer;
+  outline: none;
+  margin: 0.2em 0;
+  text-decoration: none;
+}
+
+#userid {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: medium;
+  border: 2px solid #e9dcdc;
+  width: 70%;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 10px 4px;
+}
+
+#userid1 {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: medium;
+  border: 2px solid #e9dcdc;
+  width: 70%;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 10px 4px;
+}
+
+#passwd {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: medium;
+  border: 2px solid #e9dcdc;
+  width: 70%;
+  margin-bottom: -10px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 10px 1px;
+}
+
+#passwd1 {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: medium;
+  border: 2px solid #e9dcdc;
+  width: 70%;
+  margin-bottom: -10px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 8px 1px;
+}
+
+.address {
+  width: 40%;
+}
+
+#fname {
+  width: 90%;
+  font-size: small;
+
+  margin-bottom: -5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+}
+
+#cpass {
+  width: 312%;
+  font-size: small;
+  margin-bottom: -5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+  margin-left: -122px;
+  
+}
+
+#pass {
+  width: 43%;
+  font-size: small;
+  margin-bottom: 18px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+  margin-right: 114px;
+  margin-top: 15px;
+  margin-left: -11px;
+}
+
+#lname {
+  width: 90%;
+  font-size: small;
+
+  margin-bottom: -5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+}
+
+#email {
+  width: 95%;
+  font-size: small;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+  margin-top: 5px;
+  margin-right: 154px;
+}
+
+#age {
+
+  width: 18.3%;
+  font-size: small;
+  margin-bottom: -52px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+  margin-right: 223px;
+  margin-top: 23px;
+}
+
+#uname {
+  width: 111%;
+  font-size: small;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+  margin-left: 28px;
+  margin-top: 5px;
+
+}
+
+#state {
+  width: 51%;
+  font-size: small;
+  margin-bottom: -5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+  margin-left: -27px;
+  margin-right: 71px;
+}
+
+
+#district {
+  width: 94%;
+  font-size: small;
+  margin-bottom: -5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+  margin-left: -114px;
+  margin-right: 44px;
+}
+
+#city {
+  width: 63px;
+  font-size: small;
+  margin-bottom: -5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+  margin-left: -169px;
+  margin-right: -110px;
+}
+
+#roles {
+  width: 30%;
+  font-size: small;
+
+  margin-bottom: 10px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 5px 4px;
+}
+
+#form1 {
+  width: 29%;
+  margin-top: 45px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: aliceblue;
+  margin-left: 345px;
+  margin-right: 300px;
+  padding: 0px;
+}
+
+
+.form-control {
+  position: relative;
+  display: inline-block;
+
+
+}
+
+.inline {
+  position: relative;
+  display: inline;
+
+}
+
+.form-control input {
+  /* width: 100%; */
+  border: 2px solid #f0f0f0;
+  display: block;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+
+  border-color: #e74c3c;
+}
+
+.form-control.error.success i {
+  color: #2ecc71;
+}
+
+#fname1 i {
+  position: absolute;
+  top: 7px;
+  right: 4px;
+  visibility: hidden;
+}
+
+#fname1.success i.fa-circle-check {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+
+#fname1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#lname1 i {
+  position: absolute;
+  top: 7px;
+  right: 4px;
+  visibility: hidden;
+}
+
+#lname1.success i.fa-circle-check {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#lname1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#email1 i {
+  position: absolute;
+  top: 25px;
+  right: 4px;
+  visibility: hidden;
+}
+
+#email1.success i.fa-circle-check {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#email1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#pass1 i {
+  position: absolute;
+  top: 17px;
+  right: 119px;
+  visibility: hidden;
+}
+
+#pass1.success i.fa-circle-check {
+  position: absolute;
+  top: 22px;
+  right: 132px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#pass1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 22px;
+  right: 132px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#cpass1 i {
+  position: absolute;
+  top: 7px;
+  right: 2px;
+  visibility: hidden;
+}
+
+#cpass1.success i.fa-circle-check {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#cpass1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#age1 i {
+  position: absolute;
+  top: 31px;
+  right: 283px;
+  visibility: hidden;
+}
+
+#age1.success i.fa-circle-check {
+  position: absolute;
+  top: 31px;
+  right: 258px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#age1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 31px;
+  right: 258px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#uname1 i {
+  position: absolute;
+  top: 7px;
+  right: -70px;
+  visibility: hidden;
+}
+
+#uname1.success i.fa-circle-check {
+  position: absolute;
+  top: 12px;
+  right: -58px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#uname1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 12px;
+  right: -58px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#district1 i {
+  position: absolute;
+  top: 7px;
+  right: 75px;
+  visibility: hidden;
+}
+
+#district1.success i.fa-circle-check {
+  position: absolute;
+  top: 7px;
+  right: 78px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#district1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 7px;
+  right: 78px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#state1 i {
+  position: absolute;
+  top: 7px;
+  right: 95px;
+  visibility: hidden;
+}
+
+#state1.success i.fa-circle-check {
+  position: absolute;
+  top: 7px;
+  right: 94px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#state1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 7px;
+  right: 94px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#city1 i {
+  position: absolute;
+  top: 7px;
+  right: -52px;
+  visibility: hidden;
+}
+
+#city1.success i.fa-circle-check {
+  position: absolute;
+  top: 7px;
+  right: -5px;
+  color: #2ecc71;
+  visibility: visible;
+}
+
+#city1.error i.fa-circle-exclamation {
+  position: absolute;
+  top: 7px;
+  right: -5px;
+  color: #e74c3c;
+  visibility: visible;
+}
+
+#fname1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  visibility: hidden;
+}
+
+#fname1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  visibility: visible;
+}
+
+#lname1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  visibility: hidden;
+}
+
+#lname1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 1px;
+  left: 3px;
+  visibility: visible;
+}
+
+#email1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -45px;
+  left: -304px;
+  visibility: hidden;
+}
+
+#email1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -27px;
+  left: 1px;
+  visibility: visible;
+}
+
+#uname1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -8px;
+  left: 11px;
+  visibility: hidden;
+}
+
+#uname1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -9px;
+  left: 30px;
+  visibility: visible;
+}
+
+#age1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -48px;
+  left: 34px;
+  visibility: hidden;
+}
+
+#age1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -46px;
+  left: 34px;
+  visibility: visible;
+}
+
+#pass1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+  visibility: hidden;
+}
+
+#pass1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 6px;
+  left: 5px;
+  visibility: visible;
+}
+
+#cpass1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -20px;
+  left: -112px;
+  visibility: hidden;
+}
+
+#cpass1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -17px;
+  left: -120px;
+  visibility: visible;
+}
+
+#cpass1.error2 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -17px;
+  left: -255px;
+  visibility: visible;
+}
+
+#state1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 2px;
+  left: -53px;
+  visibility: hiddene;
+}
+
+#state1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 1px;
+  left: -7px;
+  visibility: visible;
+}
+
+#city1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0px;
+  left: -46px;
+  visibility: hidden;
+}
+
+#city1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -3px;
+  left: -142px;
+  visibility: visible;
+  margin-left: 68px;
+  width: 86.25px;
+  height: 15.3333px;
+}
+
+#district1 span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 2px;
+  left: -82px;
+  visibility: hidden;
+}
+
+#district1.error span {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 1px;
+  left: -82px;
+  visibility: visible;
+}
+
+.form-control.success i.fa-circle-check {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+/* 
+.form-control.error i.fa-circle-exclamation {
+  color: #e74c3c;
+  visibility: visible;
+} */
+
+.formerror {
+  color: red;
+  font-size: smaller;
+  visibility: hidden;
+}
+
+
+.hide {
+  display: none;
+}
+
+
+input.error:focus {
+  border: 1px solid red;
+}
+
+
+#voted {
+  padding: 5px;
+  background-color: green;
+}
+
+.box {
+  width: 20%;
+  /* margin: 30px 0 30px 30px; */
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+}
+
+#updateform {
+  font-family: 'Poppins',
+    sans-serif;
+  color: white;
+}
+
+.formerror {
+  color: red;
+}
+
+
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.error span {
+  font-size: x-small;
+  font-weight: bold;
+}
+
+
+input.error:focus {
+  border: 1px solid rgb(255, 0, 0);
+}

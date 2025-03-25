@@ -1,0 +1,249 @@
+@import url('https:fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #E5E7EB;
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    background: rgb(0, 32, 139);
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 30px 0 0 30px;
+
+}
+
+.white {
+    color: white;
+}
+
+
+a:hover {
+    color: rgb(17, 17, 17);
+}
+
+menu.items {
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+#menu.items li {
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover {
+    background: white;
+    cursor: pointer;
+}
+
+#menu .items li :nth-child(1) {
+    border-left: 4px solid white;
+}
+
+#menu .items li i {
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li a {
+    text-decoration: none;
+    color: #253047;
+    font-weight: 300px;
+    transition: 0.3s ease;
+    height: 300px;
+}
+
+#interface {
+    width: 100%;
+    margin-left: 300px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 30px;
+
+}
+#approval {
+    width: 100%;
+    margin-left: 300px;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 30px;
+
+}
+.n1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#menu-btn {
+    display: none;
+    color: #253047;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.i-name {
+    color: #253047;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.values {
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.values .val-box {
+    background: white;
+    width: 235px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.values .val-box i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background: #000000;
+    margin-right: 15px;
+}
+
+.values .val-box:nth-child(1) i {
+    background-color: rgb(239, 239, 245)
+}
+
+.values .val-box:nth-child(2) i {
+    background-color: darkblue;
+}
+
+.values .val-box:nth-child(3) i {
+    background-color: darkblue
+}
+
+.values .val-box:nth-child(4) i {
+    background-color: darkblue;
+}
+
+.values .val-box h3 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.values .val-box span {
+    font-size: 15px;
+    color: darkblue;
+}
+
+.board {
+    width: 77%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: white;
+    border-radius: 8px;
+}
+
+.board h5 {
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.board p {
+    font-weight: 400;
+    font-size: 13px;
+    color: #253047;
+}
+
+.board .people {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px saddlebrown;
+}
+
+thead td {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: white;
+    text-align: start;
+    padding: 15px;
+}
+
+tbody tr td {
+    padding: 10px 7px;
+}
+
+.active p {
+    background: lightcyan;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: black;
+}
+
+.edit a {
+    text-decoration: none;
+    font-size: 14px;
+    color: peachpuff;
+    font-weight: 600;
+}
+.approve-btn {
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.approve-btn:hover {
+    background: darkgreen;
+}

@@ -1,0 +1,363 @@
+@import url('https:fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+/*{
+  font-family: 'Poppins',
+  sans-serif;
+}*/
+body {
+  background-color: darkred;
+}
+
+#onlinevs {
+  color: white;
+  font-family: 'Poppins',
+    sans-serif;
+}
+
+#admin {
+  font-family: 'Poppins', sans-serif;
+  text-align: right;
+  color: #e9dcdc;
+  margin-right: 203px;
+  border-style: inset;
+  border-color: #333438;
+  /* width: 90px; */
+  margin-left: 880px;
+  margin-top: 2px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#profileSection {
+  font-family: 'Poppins',
+    sans-serif;
+  color: black;
+  width: 30%;
+  float: left;
+  display: inline-block;
+  margin: 52px 0 3px 165px;
+  padding: 0 0 20px 0;
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+
+}
+
+#groupSection {
+  font-family: 'Poppins',
+    sans-serif;
+  color: black;
+  width: 40%;
+  float: right;
+  display: inline-block;
+  margin: 35px 160px 3px 3px;
+  padding: 0 0 12px 0;
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+
+}
+
+#logout-button {
+  margin-left: 1000px;
+}
+
+#adminpage {
+  border: 2px solid black;
+  width: 180px;
+  background: white;
+  padding: 33px;
+  margin-top: 18px;
+  height: 121px;
+}
+
+#leftsection {
+  color: white;
+  font-weight: 600;
+  width: 50%;
+  float: left;
+  padding: 6px;
+  margin-top: 200px;
+  text-align: center;
+  font-size: 50px;
+  margin-left: 103px;
+}
+
+#adminlogin {
+  color: aliceblue;
+  font-size: larger;
+  margin-top: 140px;
+}
+
+#rightsection {
+
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding-top: 52px;
+  height: 233px;
+  text-align: center;
+  width: 20%;
+  float: right;
+  margin-top: 140px;
+  margin-right: 16%;
+  font-size: 18px;
+}
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 23%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#loginbtn {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 17px;
+  width: 35%;
+  height: 25%;
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: #11275e;
+  cursor: pointer;
+  outline: none;
+}
+
+#register {
+  width: 30%;
+  font-size: 17px;
+  height: 7%;
+  border: thin solid #e9dcdc;
+  outline: thin;
+  padding: 2px;
+  font-weight: bold;
+  border-radius: 7px;
+  color: whitesmoke;
+  background-color: #11275e;
+  cursor: pointer;
+  outline: none;
+  margin-top: 0.3em;
+}
+
+#userid {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: medium;
+  border: thin solid #e9dcdc;
+  width: 70%;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 10px 4px;
+}
+
+#passwd {
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: medium;
+  border: thin solid #e9dcdc;
+  width: 70%;
+  margin-bottom: -10px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 10px 1px;
+}
+
+.address {
+  width: 40%;
+}
+
+#fname {
+
+  font-size: small;
+  border: thin solid #e9dcdc;
+
+  margin-bottom: 5px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 0px 6px 4px;
+}
+
+#cpass {
+  width: 30%;
+
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 0px 6px 4px;
+}
+
+#pass {
+  width: 40%;
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 6px 4px;
+}
+
+#lname {
+  width: 39%;
+
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 6px 4px;
+}
+
+#email {
+  width: 45%;
+
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 6px 4px;
+}
+
+#age {
+  width: 21.3%;
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 6px 4px;
+}
+
+#uname {
+  width: 38%;
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 6px 4px;
+}
+
+#state,
+#city {
+  width: 46%;
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 6px 4px;
+}
+
+#district {
+  width: 42%;
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+  padding: 4px 7px 6px 4px;
+}
+
+#candidate {
+  width: 90%;
+  font-size: small;
+  margin-bottom: -16px;
+  padding: 4px 7px 0px 7px;
+}
+
+#roles {
+  width: 32%;
+  font-size: small;
+  border: thin solid #e9dcdc;
+  margin-bottom: -15px;
+  border-radius: 2px;
+  outline: thin;
+
+}
+
+#form1 {
+  width: 29%;
+  margin-top: 32px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: aliceblue;
+  margin-left: 345px;
+  margin-right: 300px;
+  padding: 18px;
+}
+
+.form-control {
+  position: relative;
+
+}
+.form-control input{
+width: 100%;
+}
+.formerror {
+  color: red;
+  font-size: large;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+span {
+  font-size: x-small;
+}
+
+input.error:focus {
+  border: 1px solid red;
+}
+
+
+#voted {
+  padding: 5px;
+  background-color: green;
+}
+
+.box {
+  width: 20%;
+  /* margin: 30px 0 30px 30px; */
+  overflow: auto;
+  background: white;
+  border-radius: 8px;
+}
+
+#updateform {
+  font-family: 'Poppins',
+    sans-serif;
+  color: white;
+}

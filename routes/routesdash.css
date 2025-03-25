@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ecf0f1;
+}
+
+/* Header Section */
+#headerSection {
+    background-color: #0d64e6;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+}
+
+#headerSection button {
+    position: absolute;
+    top: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#back-button {
+    left: 20px;
+    background-color: #e74c3c;
+    color: white;
+}
+
+#logout-button {
+    right: 20px;
+    background-color: #e67e22;
+    color: white;
+}
+
+/* Main Section */
+#mainSection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+h2 {
+    color: #34495e;
+    text-align: center;
+}
+
+/* Profile Section */
+#profileSection img {
+    border-radius: 50%;
+    border: 3px solid #2980b9;
+}
+
+/* Candidate Section */
+#groupSection div {
+    border-bottom: 1px solid #bdc3c7;
+    padding: 10px 0;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
